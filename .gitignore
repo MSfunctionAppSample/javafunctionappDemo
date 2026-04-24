@@ -1,0 +1,53 @@
+# ── CI output (populated by pipeline) ──
+2-test-result/*
+!2-test-result/.gitkeep
+3-build/*
+!3-build/.gitkeep
+
+# ── Maven ──
+0-src/target/
+*.jar
+*.war
+*.class
+dependency-reduced-pom.xml
+
+# ── IDE ──
+.idea/
+*.iml
+
+.settings/
+.project
+.classpath
+*.swp
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Azure Functions ──
+local.settings.json
+bin/
+obj/
+
+# ── Logs ──
+*.log
+
+# ── Research ──
+Research/
+!Research/.gitkeep
+
+# ── Azurite (local Azure Storage emulator) ──
+__azurite_db_*.json
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/
+!__blobstorage__/.gitkeep
+!__queuestorage__/.gitkeep
+!__tablestorage__/.gitkeep
+
+# ── Claude AI assistant ──
+.claude
+.claude/
+.claude/*
+
+*.md
